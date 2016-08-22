@@ -7,7 +7,7 @@ module Api
 
 		self.cards = [
 			{question: 'Where do the files for ActiveSuck classes go?' , id: 1}, 
-			{question: "How come there's a skynet gem dependency in project?", id: 2},
+			{question: "How come there's a skynet gem dependency in my project?", id: 2},
 			{question: '_____ changed from development to production?', id: 3},
 			{question: "Why isn't hogwarts a good name for the base application class?", id: 4},
 			{question: "rails g _______ ", id: 5}
