@@ -38,6 +38,7 @@ One item that can be somewhat tricky is templates. Since templates will make a w
 <details>
 We can use a templates folder in the public directory. 
 </details>
+
 Another option is to use a custom gem. The [Angular Rails Templates](https://github.com/pitr/angular-rails-templates)
 gem enables you to keep your templates in assets folder. You can either keep them in your 
 ``javascripts`` folder or in ``assets/templates``. You can also run them through a template library like ERB, Handlebars, or HAML. Even Rails helper methods can be used in the templates!
@@ -78,21 +79,24 @@ One option that Rails makes easy to work with is to keep multiple routes togethe
 namespace. For example, when you want to prefix a group of routes behind ``api/`` you can use a
 namespace.
 
-1. Includes a namespace in your routing 
-```ruby
+1. Include a namespace in your routing 
+	
+	```ruby
 	namespace :api do 
 		resources :questions
 		# any other resources 
 	end
 ```
 2. Adding the namespace also allows you to exclude the new and edit route at the namespace level. 
-```ruby
-	namepsace :api, exclude: [:new, :edit] 
-```
+	
+	```ruby
+		namepsace :api, exclude: [:new, :edit] 
+	```
 3. To use the namespace with the default rails conventions you'll need to do put all of the 
 controllers in the namespace in a folder with the same name as the namespace. You also need to 
 declare your controller inside of a module with the name of the namespace.
-```ruby 
+	
+	```ruby 
 # app/controllers/api/questions_controller.rb
 module api
 	class QuestionsController < ApplicationController
