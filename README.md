@@ -34,7 +34,7 @@ If you want to include another dependency that is no longer inlcuded in Angular,
 To build your actual Angular app you can use the ``app/assets/javascripts`` folder. Inside 
 this folder, you can use whatever file structure you like.
 
-One item that can be somewhat tricky is templates. Since templates will make a webservice 
+One item that can be somewhat tricky is templates. Since templates will make a webservice call for the HTML document where can you put the templates to make it available to the Angular app?
 <details>
 We can use a templates folder in the public directory. 
 </details>
