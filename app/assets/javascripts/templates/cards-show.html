@@ -1,0 +1,8 @@
+<div class='row' ng-if="cards.notFound">
+	<h2>Card not found</h2>
+</div>
+<div class='row' ng-if="!cards.notFound">
+	<div class='col-sm-6 col-md-6 col-lg-4 col-sm-offset-3 col-md-offset-3 col-lg-offset-4'>
+    	<wdi-card question="{{cards.card.question}}"></wdi-card>
+    </div>
+</div>

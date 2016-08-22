@@ -1,0 +1,20 @@
+<div class='row'>
+	<div class='col-xs-6 col-md-6 col-lg-4' ng-repeat="card in cards.all" >
+    	<wdi-card question="{{card.question}}"></wdi-card>
+    </div>
+</div>
+<div class='row'>
+	<div class='col-xs-6 col-md-4 col-lg-2 col-xs-offset-3 col-md-offset-4 col-lg-offset-5'>
+		<h2>New card idea?</h2>
+	</div>
+</div>
+<div class='row'>
+	<div class='col-sm-12'>
+		<form ng-submit='cards.cards.add(cards.card)'>
+			<div class="form-group">
+				<input type="text" name="question" class="form-control" placeholder="Your question" ng-model='cards.card.question'>
+			</div>
+		</form>
+	</div>
+</div>
+    
